@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    max-height: 100vh;
+    background-color: #ecfeff;
+}
+
+.container {
+    display: flex;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 5px 0 6px #155e75;
+    width: 100%;   
+    background-image: linear-gradient(to right, #67e8f9, #06b6d4);
+}
+
+button {
+    width: 80px;
+    height:50px;
+    background-color: #cffafe;
+    border: none;
+    border-radius: 5px;
+    margin-right: 2em;
+    cursor: pointer;
+}
