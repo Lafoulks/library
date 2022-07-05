@@ -13,12 +13,12 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    box-shadow: 5px 0 6px #155e75;
+    box-shadow: 1px 0 6px #1c748f;
     width: 100%;   
-    background-image: linear-gradient(to right, #67e8f9, #06b6d4);
+    background-image: linear-gradient(to right, #a5f3fc, #06b6d4);
 }
 
-button {
+.login-btn {
     width: 80px;
     height:50px;
     background-color: #cffafe;
@@ -26,4 +26,22 @@ button {
     border-radius: 5px;
     margin-right: 2em;
     cursor: pointer;
+}
+
+.add-book {
+    width: 80px;
+    height:50px;
+    background-color: #cffafe;
+    border: none;
+    border-radius: 5px;
+    margin-right: 2em;
+    cursor: pointer;
+}
+
+.add-book::before {
+    content: url(Icon/book.png);
+}
+
+.form-popup {
+
 }
