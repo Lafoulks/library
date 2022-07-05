@@ -36,8 +36,8 @@ body {
 
 .add-book {
     position: fixed;
-    top: 30%;
-    left: 45%;
+    top: 20%;
+    left: 46%;
     width: 80px;
     height:50px;
     background-color: #cffafe;
@@ -78,7 +78,7 @@ body {
 .form-popup {
     display: none;
     position: fixed;
-    top: 20%;
+    top: 30%;
     left: 40%;
     border: 2px solid #a5f3fc;
   }
