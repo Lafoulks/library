@@ -1,4 +1,8 @@
 const form = document.getElementById('myForm');
+let title = document.getElementById('title');
+let author = document.getElementById('author');
+let pages = document.getElementById('pages');
+let status = document.getElementById('status');
 const bookBtn = document.querySelector('.add-book');
 let myLibrary = [];
 
@@ -11,12 +15,13 @@ function Book(author, title, pages, status) {
 
 /*Add function that:
 1. Takes user input
-2.Store new Book object in array
+2. Creates new book
+3. Pushes book to myLibrary array
 */
-
-function addBookToLibrary() {
-  let title = document.getElementById('title');
-  console.log(title.value);
+function addBookToLibrary(newBook) {
+  newBook = new Book(author.value, title.value, pages.value);
+  myLibrary.push(newBook);
+  console.log(myLibrary);
 }
 
 //Pop up functionality
@@ -27,7 +32,7 @@ function openForm() {
 //Adding books
 bookBtn.addEventListener('click', openForm)
 form.addEventListener('submit', (e) => {
-  addBookToLibrary();
+  addBookToLibrary(author, title, pages);
   e.preventDefault();
   }
 );
