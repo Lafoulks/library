@@ -6,11 +6,10 @@ let status = document.getElementById('status');
 const bookBtn = document.querySelector('.add-book');
 let myLibrary = [];
 
-function Book(author, title, pages, status) {
+function Book(author, title, pages) {
     this.author = author
     this.title = title
     this.pages = pages
-    this.status = status
 }
 
 /*Add function that:
@@ -22,6 +21,25 @@ function addBookToLibrary(newBook) {
   newBook = new Book(author.value, title.value, pages.value);
   myLibrary.push(newBook);
   console.log(myLibrary);
+}
+
+/*Write function that: 
+1. Loops through array and displays each book on the page
+2. Display in table or on individual "cards"
+  -write a createElement function and place into Book prototype. Style in css and add classlist to each div
+3. Manually add permanent books to array to see how the display looks
+*/
+
+function createCard() {
+  const card = document.createElement('div');
+  card.classList.add('card');
+
+}
+
+function dispalyBooks() {
+  for (let i = 0; i < myLibrary.length; i++) {
+    createBooks();
+  }
 }
 
 //Pop up functionality
