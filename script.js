@@ -1,4 +1,6 @@
 const form = document.getElementById('myForm');
+let cardContainer = document.getElementById('card-container');
+cardContainer.classList.add('card-container');
 let title = document.getElementById('title');
 let author = document.getElementById('author');
 let pages = document.getElementById('pages');
@@ -31,14 +33,14 @@ function addBookToLibrary(newBook) {
 */
 
 function createCard() {
-  const card = document.createElement('div');
+  let card = document.createElement('div');
   card.classList.add('card');
-
+  cardContainer.appendChild(card);
 }
 
 function dispalyBooks() {
   for (let i = 0; i < myLibrary.length; i++) {
-    createBooks();
+    createCard();
   }
 }
 
@@ -51,6 +53,8 @@ function openForm() {
 bookBtn.addEventListener('click', openForm)
 form.addEventListener('submit', (e) => {
   addBookToLibrary(author, title, pages);
+  createCard();
   e.preventDefault();
   }
 );
+

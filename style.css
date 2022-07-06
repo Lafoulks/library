@@ -83,12 +83,12 @@ body {
     border: 2px solid #a5f3fc;
   }
 
-  .card-container {
-    border: 2px solid black;
+  #card-container {
     display: grid;
     overflow: auto;
+    justify-content: center;
     grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(9, minmax(150px, 200px));
     margin-top: 5%;
     height: 75vh;
   }
